@@ -8,6 +8,12 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+.imagen{
+  width: 300px;
+  height: 100px;
+
+}
+
 .clearfix {
   *zoom: 1;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Modulo Autos</title>
+    <title>AT&T</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -42,7 +42,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="/front/img/favico.ico">
+                                   <link rel="shortcut icon" href="/front/img/favicon.ico">
   </head>
 
   <body>
@@ -55,11 +55,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Logo</a>
+          <a class="brand" href="#">AT&T</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right"> <a href="#" class="navbar-link"></a></p>
             <ul class="nav">
-              <li class="active"><a href="#">RF</a></li>
+              <li class="active"><a href="#">RF Optimización</a></li>
            
             </ul>
           </div><!--/.nav-collapse -->
@@ -106,47 +106,47 @@
                     <div class="span6">
                         <!-- Aqui va la Primera mitad -->
                               <!-- CUESTIONARIO VALIDADOR -->
-                <!-- USUARIO DE RED: -->
+                <!-- USUARIO DE RED: OK -->
 
-                <form data-toggle="validator" role="form">
+                <form data-toggle="validator" role="form" action="registro_autos.php" method="post" enctype="multipart/form-data">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Usuario de Red:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="ID de Empleado" required >
+                    <input type="text" name="usuario_red" class="form-control" id="inputName" placeholder="ID de Empleado" required >
                   </div>
                   
                  
-                  <!-- NOMBRE COMPLETO -->
+                  <!-- NOMBRE COMPLETO OK -->
                        <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Nombre Completo:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Nombre y Apellidos" required >
+                    <input type="text" name="nombre_completo" class="form-control" id="inputName" placeholder="Nombre y Apellidos" required >
                   </div>
                 
 
-                  <!-- AREA -->
+                  <!-- AREA OK-->
                   <div class="form-group">
                     <label class="col-xs-3">Area</label>
                     <div class="col-xs-5 selectContainer">
                       <select name="area" class="form-control">
-                        <option value="">Transporte</option>
-                        <option value="rf">RF Optimizacion</option>
-                        <option value="operaciones">Operaciones</option>
-                        <option value="ran">RAN</option>
-                        <option value="core">Core</option>
+                        <option value=""></option>
+                        <option value="RF OPTIMIZACION">RF Optimizacion</option>
+                        <option value="FOPS">Operaciones</option>
+                        <option value="RAN">RAN</option>
+                        <option value="CORE">Core</option>
                       </select>
                     </div>
                   </div>
 
-                  <!-- Region -->
+                  <!-- MERCADO OK -->
                   <div class="form-group">
-                    <label class="col-xs-3">Región</label>
+                    <label class="col-xs-3">Mercado</label>
                     <div class="col-xs-5 selectContainer">
-                      <select name="region" class="form-control">
-                        <option value="">Noreste</option>
-                        <option value="rf">Centro</option>
-                        <option value="operaciones">Penninsula</option>
-                        <option value="ran">Pacifico</option>
-                        <option value="core">Noroeste</option>
+                      <select name="mercado" class="form-control">
+                        <option value=""></option>
+                        <option value="Monterrey">Monterey</option>
+                        <option value="Reynosa">Reynosa</option>
+                        <option value="Saltillo">Saltillo</option>
+                        <option value="Leon">León</option>
                       </select>
                     </div>
                   </div>
@@ -156,11 +156,12 @@
                     <label class="col-xs-3">Coordinación</label>
                     <div class="col-xs-5 selectContainer">
                       <select name="coordinacion" class="form-control">
-                        <option value="">Monterrey</option>
-                        <option value="rf">Tamaulipas</option>
-                        <option value="operaciones">León</option>
-                        <option value="ran">Sinaloa</option>
-                        <option value="core">Guadalajara</option>
+                        <option value=""></option>
+                        <option value="Monterrey">Monterrey</option>
+                        <option value="TAMAULIPAS">Tamaulipas</option>
+                        <option value="Leon">León</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Guadalajara">Guadalajara</option>
                       </select>
                     </div>
                   </div>
@@ -169,7 +170,8 @@
                   <div class="form-group">
                     <label class="col-xs-3">Marca de Auto Asignado</label>
                     <div class="col-xs-5 selectContainer">
-                      <select name="marca" class="form-control">
+                      <select name="marca_auto" class="form-control">
+                        <option value=""></option>
                         <option value="toyota">Toyota</option>
                         <option value="chevrolet">Chevrolet</option>
                         <option value="jeep">Jeep</option>
@@ -184,6 +186,7 @@
                     <label class="col-xs-3">Modelo de Auto Asignado</label>
                     <div class="col-xs-5 selectContainer">
                       <select name="modelo" class="form-control">
+                        <option value=""></option>
                         <option value="2010">2010</option>
                         <option value="2011">2011</option>
                         <option value="2012">2012</option>
@@ -200,9 +203,10 @@
                     <label class="col-xs-3">Tipo de Auto Asignado</label>
                     <div class="col-xs-5 selectContainer">
                       <select name="tipo" class="form-control">
-                        <option value="2010">Camioneta</option>
-                         <option value="2010">Auto</option>
-                          <option value="2010">Jeep</option>
+                        <option value=""></option>
+                        <option value="Camioneta">Camioneta</option>
+                         <option value="Auto">Auto</option>
+                          <option value="Jeep">Jeep</option>
                       </select>
                     </div>
                   </div>
@@ -211,14 +215,14 @@
                 <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Número de Serie del Auto:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Serie del Vehículo" required >
+                    <input type="text" name="serie_auto" class="form-control" id="inputName" placeholder="Serie del Vehículo" required >
                   </div>
 
                   <!-- KILOMETRAJE DEL AUTO: -->
                 <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Kilometraje del Auto:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="kilometraje actúal" required >
+                    <input type="text" name="kilometraje" class="form-control" id="inputName" placeholder="kilometraje actúal" required >
                   </div>
 
 
@@ -226,34 +230,34 @@
                 <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Tarjeta de Circulación:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Número de Tarjeta" required >
+                    <input type="text" name="tarjeta_circulacion" class="form-control" id="inputName" placeholder="Número de Tarjeta" required >
                   </div>
 
                     <!-- TARJETA DE PEAJE: -->
                 <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Tarjeta de Peaje:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Número de Tarjeta" required >
+                    <input type="text" name="tarjeta_peaje" class="form-control" id="inputName" placeholder="Número de Tarjeta" required >
                   </div>
 
                    <!-- NUMERO DE TARJETA DE GASOLINA: -->
                 <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Tarjeta de Gasolina:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Número de Tarjeta" required >
+                    <input type="text" name="tarjeta_gasolina" class="form-control" id="inputName" placeholder="Número de Tarjeta" required >
                   </div>
 
                     <!-- NIP DE TARJETA DE GASOLINA: -->
                 <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">NIP Tarjeta de Gasolina:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="NIP de Tarjeta" required >
+                    <input type="text" name="nip_tarjeta" class="form-control" id="inputName" placeholder="NIP de Tarjeta" required >
                   </div>
                    <!-- NUMERO DE POLIZA: -->
                 <form data-toggle="validator" role="form">
                   <div class="form-group">
                     <label for="inputName" class="control-label">Número de Poliza de Seguro:</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Numero de Poliza de Seguro" required >
+                    <input type="text" name="poliza_seguro" class="form-control" id="inputName" placeholder="Numero de Poliza de Seguro" required >
                   </div>
 
                      </div>  
@@ -269,34 +273,37 @@
                   <!-- FOTOGRAFIA FRONTAL -->
                   <div class="form-group">
                                 <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
-                                <input type="file" id="ejemplo_archivo_1">
+                                <input type="file" name="foto_frontal" id="foto">
                                 <p class="help-block">FOTOGRAFIA FRONTAL</p>
                   </div>
                   
                    <!-- FOTOGRAFIA LATERAL DERECHO -->
                   <div class="form-group">
                                 <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
-                                <input type="file" id="ejemplo_archivo_1">
+                                <input type="file" name="foto_izq">
                                 <p class="help-block">FOTOGRAFIA LATERAL DERECHO</p>
                   </div>
                   
                   <!-- FOTOGRAFIA LATERAL IZQUIERDO -->
                   <div class="form-group">
                                 <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
-                                <input type="file" id="ejemplo_archivo_1">
+                                <input type="file" name="foto_der">
                                 <p class="help-block">FOTOGRAFIA LATERAL IZQUIERDO</p>
                   </div>
 
                    <!-- FOTOGRAFIA ATRAS -->
                   <div class="form-group">
                                 <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
-                                <input type="file" id="ejemplo_archivo_1">
+                                <input type="file" name="foto_atras">
                                 <p class="help-block">FOTOGRAFIA ATRÁS</p>
                   </div>
 
+                  
 
                   <div class="form-group">
                     <button type="submit" class="btn btn-primary">Registrar</button>
+                    
+                  
                   </div>
 
                   
@@ -333,7 +340,7 @@
           </div>
 
       <footer>
-        <p>&copy; Control de Inventarios 2016</p>
+        <p>&copy; AT&T Company 2016</p>
       </footer>
 
     </div><!--/.fluid-container-->
